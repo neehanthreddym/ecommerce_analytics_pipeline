@@ -59,11 +59,11 @@ The dataset contains transaction records from an online retail store with the fo
 - Monetary Value: Highest (avg. £2,261)
 - Action: VIP treatment and premium offerings
 
-### 3. **Market Basket Analysis** (Planned)
+### 3. **Market Basket Analysis** ✅
 - Identify product associations and buying patterns
 - Calculate support, confidence, and lift metrics
 - Generate association rules for cross-selling opportunities
-- Status: In Progress
+- **Status**: Complete
 
 ### 4. **Sales Forecasting** (Planned)
 - Time-series analysis of sales data
@@ -98,6 +98,7 @@ Non-product transactions removed:
   - StandardScaler for feature normalization
   - KMeans for customer segmentation
   - Silhouette score for cluster validation
+- **Association Rule Mining**: mlxtend
 - **Visualization**: Matplotlib, Seaborn
 - **Environment**: Jupyter Notebook
 
@@ -136,9 +137,10 @@ See `requirements.txt` for all dependencies including:
    - Generates 4 distinct customer clusters
    - Produces visualizations for cluster characteristics
 
-3. **Market Basket Analysis** (Coming Soon)
-   - Association rule mining
-   - Product recommendation engine
+3. **Market Basket Analysis** (Cells 74+)
+   - Execute cells in "Market Basket Analysis" section
+   - Generates association rules
+   - Identifies cross-selling opportunities
 
 4. **Sales Forecasting** (Coming Soon)
    - Time-series forecasting models
@@ -157,13 +159,13 @@ See `requirements.txt` for all dependencies including:
 - ✅ Created 3D visualizations of customer space
 - ✅ Calculated descriptive statistics per segment
 
-## Next Steps
-1. **Market Basket Analysis**
-   - Apply Apriori or Eclat algorithm
-   - Generate association rules for cross-selling
-   - Identify top product combinations
+### Market Basket Analysis
+- ✅ **Bundle Product Promotions**: Opportunities for discounted bundles (e.g., pink, green, and roses tea plates).
+- ✅ **Optimize Product Placement**: Strategy to place strongly associated items adjacent to each other.
+- ✅ **Inventory Management**: Importance of stocking complementary items together to avoid out-of-stock situations.
 
-2. **Sales Forecasting**
+## Next Steps
+1. **Sales Forecasting**
    - Build ARIMA/SARIMA models
    - Implement Prophet for trend analysis
    - Create LSTM-based deep learning forecasts
