@@ -65,11 +65,11 @@ The dataset contains transaction records from an online retail store with the fo
 - Generate association rules for cross-selling opportunities
 - **Status**: Complete
 
-### 4. **Sales Forecasting** (Planned)
+### 4. **Sales Forecasting** ✅
 - Time-series analysis of sales data
 - Implement forecasting models (ARIMA, Prophet, LSTM)
 - Predict future sales trends by product and customer segment
-- Status: Planned
+- **Status**: Complete
 
 ## Key Findings
 ### Data Quality Issues Addressed
@@ -99,7 +99,8 @@ Non-product transactions removed:
   - KMeans for customer segmentation
   - Silhouette score for cluster validation
 - **Association Rule Mining**: mlxtend
-- **Visualization**: Matplotlib, Seaborn
+- **Forecasting**: statsmodels, prophet
+- **Visualization**: Matplotlib, Seaborn, Plotly
 - **Environment**: Jupyter Notebook
 
 ## Project Structure
@@ -111,10 +112,7 @@ E-commerce Customer Analytics/
 │   ├── Online Retail.csv
 │   └── online_retail_II.csv
 ├── notebooks/
-│   └── e_commerce_analytics.ipynb
-└── proposal/
-    ├── project_proposal.pdf
-    └── project_proposal.docx
+    └── e_commerce_analytics.ipynb
 ```
 
 ## Requirements
@@ -142,9 +140,11 @@ See `requirements.txt` for all dependencies including:
    - Generates association rules
    - Identifies cross-selling opportunities
 
-4. **Sales Forecasting** (Coming Soon)
-   - Time-series forecasting models
-   - Sales predictions by segment
+4. **Sales Forecasting** (Cells 90+)
+   - Execute cells in "Sales Forecasting" section
+   - Compare ARIMA, Prophet, and LSTM models
+   - Visualize future sales trends
+   - View geographical sales distribution map
 
 ## Results Summary
 ### Data Cleaning
@@ -164,11 +164,15 @@ See `requirements.txt` for all dependencies including:
 - ✅ **Optimize Product Placement**: Strategy to place strongly associated items adjacent to each other.
 - ✅ **Inventory Management**: Importance of stocking complementary items together to avoid out-of-stock situations.
 
+### Sales Forecasting
+- ✅ **Model Performance**: Compared ARIMA, Prophet, and LSTM models for accuracy.
+- ✅ **Trend Analysis**: Identified seasonal trends and long-term growth patterns in sales data.
+- ✅ **Geographical Insights**: Mapped sales distribution to identify key markets and growth regions.
+
 ## Next Steps
-1. **Sales Forecasting**
-   - Build ARIMA/SARIMA models
-   - Implement Prophet for trend analysis
-   - Create LSTM-based deep learning forecasts
+1. **Advanced Deep Learning**
+   - Implement Transformer-based models for forecasting
+   - Explore multivariate time series analysis
 
 ## Future Work
 1. **Visualization Dashboard**
